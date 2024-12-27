@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stdbool.h>
+
 
 typedef struct Grid {
   int height;
