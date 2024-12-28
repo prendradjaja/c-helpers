@@ -13,7 +13,9 @@ FILE *fopen_strict(char *path, char *mode) {
 }
 
 int getc_nonwhitespace(FILE *input) {
-  int result = ' ';
-  while (isspace(result = getc(input)));
+  int result;
+  do {
+    result = getc(input);
+  } while (isspace(result));
   return result;
 }
